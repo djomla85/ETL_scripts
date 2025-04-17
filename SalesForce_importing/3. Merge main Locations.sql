@@ -278,7 +278,7 @@ WHERE TargetStartDate <> '2024-12-01'
 
 SELECT TOP 100 * FROM [ResSpecial].[RestaurantsStaging_2]
 
--- WITH statement za vracanje redova koji su ranije unešeni u sistem 
+-- WITH statement za vracanje redova koji su ranije uneÂšeni u sistem 
 
 ;WITH MyTable AS (
 SELECT distinct restaurant_id
@@ -298,9 +298,6 @@ WHERE res1.TargetStartDate <> '2024-12-01'
 -- ResSpecialLocationId koristimo da validiramo za onih 19 redova koji stoje u Locations , jer treba da imaju neku vrednost
 -- starting point Staging tabela , u kojoj imamo 120 lokacija, 
 -- izvucemo distinct pandan kolonu kolone ResSpecialLocationId ( = restaurant_id) iz Staging tabele 
-
-
-SELECT COUNT(*) FROM  
 
 
 --insert into [Sandbox].[ResSpecial].[RestaurantLocations]
